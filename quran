@@ -1,0 +1,18 @@
+git clone https://github.com/your-username/unblocker-proxy.git
+cd unblocker-proxy
+npm install
+node index.js
+heroku create unblocker-proxy
+git add .
+git commit -m "Initial commit"
+git push heroku main
+{
+  "port": 8080,
+  "https": {
+    "enabled": false,
+    "key": "./path/to/key.pem",
+    "cert": "./path/to/cert.pem"
+  },
+  "blacklist": [],
+  "whitelist": []
+}
